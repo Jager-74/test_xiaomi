@@ -12,7 +12,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 ?><?$APPLICATION->IncludeComponent(
 	"premont:feedback", 
-	".default", 
+	"default", 
 	array(
 		"EMAIL_TO" => "demo@demo.com",
 		"EVENT_MESSAGE_ID" => array(
@@ -24,7 +24,7 @@ $APPLICATION->SetTitle("");
 			1 => "EMAIL",
 			2 => "PHONE",
 		),
-		"COMPONENT_TEMPLATE" => ".default"
+		"COMPONENT_TEMPLATE" => "default"
 	),
 	false
 );?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
